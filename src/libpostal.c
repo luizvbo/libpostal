@@ -206,7 +206,6 @@ libpostal_language_classifier_response_t *libpostal_classify_language(char *addr
     libpostal_language_classifier_response_t *response = classify_languages(address);
 
     if (response == NULL) {
-        log_error("Language classification returned NULL\n");
         return NULL;
     }
 
